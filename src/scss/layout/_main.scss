@@ -1,0 +1,105 @@
+/** Seccion window**/
+.section_window {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &_subtitle {
+    font-family: "Roboto";
+    color: $color-lightblue;
+    font-size: 14px;
+  }
+  &_title {
+    font-family: "Roboto Slab";
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 5px;
+  }
+  &_text {
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-greybrown;
+  }
+  &_button {
+    width: 76px;
+    height: 45px;
+    background-color: $color-white;
+    color: $color-brightorange;
+    border: $color-brightorange 2px solid;
+    border-radius: 22.5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 45px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+  }
+}
+
+.section_reasons {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 624px;
+  background-color: $color-iceblue;
+  &_title {
+    font-family: "Roboto Slab";
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  &_button {
+    padding: 12px;
+    padding-right: 29.5px;
+    padding-left: 30.5px;
+    text-decoration: none;
+    border-radius: 22.5px;
+    background-color: #f26002;
+    border: none;
+    color: $color-white;
+    font-size: 20px;
+  }
+}
+
+@include tablet {
+  .section_reason {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 40% 30%;
+    height: 397px;
+  }
+  .section_reasons_title {
+    grid-column: span 3;
+    font-size: 26px;
+  }
+  .section_reasons_article1 {
+    text-align: center;
+    justify-self: center;
+  }
+  .section_reasons_article2 {
+    text-align: center;
+    justify-self: center;
+  }
+  .section_reasons_article3 {
+    text-align: center;
+    justify-self: center;
+  }
+  .section_reasons_article4 {
+    grid-column: span 3;
+  }
+}
+
+@include desktop {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30% 40% 30%;
+  height: 600px;
+}
