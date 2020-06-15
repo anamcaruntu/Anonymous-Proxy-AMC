@@ -61,6 +61,23 @@
   }
   .footer_copyright {
     grid-column: 1/2;
+  }
+}
+
+@include desktop {
+  .footer_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .footer_menu {
+    grid-column: 4/5;
+    align-items: left;
+  }
+  .footer_copyright {
+    grid-column: 3/4;
     grid-row: 1/2;
+    margin: 0px;
+    margin-top: 5px;
   }
 }

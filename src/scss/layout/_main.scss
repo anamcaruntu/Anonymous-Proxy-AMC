@@ -72,7 +72,7 @@
 }
 
 @include tablet {
-  .section_reasons {
+  .section_reason {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 30% 40% 30%;
