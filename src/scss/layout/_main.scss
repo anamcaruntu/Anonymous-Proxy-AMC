@@ -42,6 +42,31 @@
   }
 }
 
+@include tablet {
+  .section_window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    &_subtitle {
+      width: 730px;
+    }
+    &_title {
+      padding-top: 5px;
+      font-size: 26px;
+      width: 730px;
+    }
+    &_text {
+      width: 730px;
+    }
+    &_link_container {
+      width: 730px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+/** Seccion reasons**/
 .section_reasons {
   display: grid;
   justify-content: center;
@@ -50,7 +75,7 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   height: 624px;
   background-color: $color-iceblue;
-"  &_title {
+  &_title {
     font-family: "Roboto Slab";
     font-size: 24px;
     text-align: center;
@@ -68,7 +93,7 @@
     border: none;
     color: $color-white;
     font-size: 20px;
-  }"
+  }
 }
 
 @include tablet {
