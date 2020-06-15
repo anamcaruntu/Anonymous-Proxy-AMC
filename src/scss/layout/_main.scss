@@ -50,7 +50,7 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   height: 624px;
   background-color: $color-iceblue;
-  &_title {
+"  &_title {
     font-family: "Roboto Slab";
     font-size: 24px;
     text-align: center;
@@ -68,11 +68,12 @@
     border: none;
     color: $color-white;
     font-size: 20px;
-  }
+  }"
 }
 
 @include tablet {
-  .section_reason {
+  .section_reasons {
+    min-width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 30% 40% 30%;
@@ -100,7 +101,11 @@
 }
 
 @include desktop {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 30% 40% 30%;
-  height: 600px;
+  .section_reasons {
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 40% 30%;
+    height: 427px;
+  }
 }
