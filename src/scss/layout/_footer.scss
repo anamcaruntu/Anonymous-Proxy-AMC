@@ -46,8 +46,22 @@
 
 @include tablet {
   .footer_wrapper {
+    width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr fr;
-    grid-template-columns: 1fr 1fr fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .footer_menu_options {
+    grid-column: 2/3;
+    align-items: left;
+  }
+  .footer_menu_direction_socialmedia {
+    grid-row: span 4;
+    align-items: left;
+    margin: 0px;
+  }
+  .footer_copyright {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }
